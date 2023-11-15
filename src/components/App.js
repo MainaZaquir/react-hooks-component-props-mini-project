@@ -1,15 +1,11 @@
 import React from "react";
-import blogData from "../data/blog";
 
-console.log(blogData);
-
-function App() {
-  return (
-    <div className="App">
-      You're on your own from here! Follow the deliverables; test things out in
-      the browser as you write your code; and good luck!
-    </div>
-  );
+const About=({image="https://via.placeholder.com/215", about})=>{
+    return(
+        <aside>
+            <img src={image} alt="blog logo"/>
+            <p>{about}</p>
+        </aside>
+    )
 }
-
-export default App;
+export default About;
